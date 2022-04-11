@@ -6,7 +6,7 @@ Please see our paper [Task Agnostic Continual Learning Using Online Variational 
 # Discrete task-agnostic Permuted MNIST
 We evaluate the algorithms on a task-agnostic scenario where the task boundaries are unknown. To do so, we use the Permuted MNIST benchmark for continual learning, but without informing the algorithms on task switches. Use the following command to run the experiment
 
-```
+```Cancel changes
 CUDA_VISIBLE_DEVICES=0 python3 main.py --dataset permuted_mnist
 ```
 
@@ -14,7 +14,7 @@ CUDA_VISIBLE_DEVICES=0 python3 main.py --dataset permuted_mnist
 We consider the case where the transition between tasks occurs gradually over time, so
 the algorithm gets a mixture of samples from two 4 different tasks during the transition so the task boundaries are undefined. Use the following command to run the experiment
 ```
-UDA_VISIBLE_DEVICES=0 python3 main.py --dataset continuous_permuted_mnist --alpha 0.6
+CUDA_VISIBLE_DEVICES=0 python3 main.py --dataset continuous_permuted_mnist --alpha 0.6
 ```
 
 # FOO-VB diagonal version 
